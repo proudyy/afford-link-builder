@@ -1,0 +1,33 @@
+name: Run tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repository
+      - uses: actions/checkout@v4
+
+      # 2. Install Bun
+      - name: Install bun runtime
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: bun i
+
+      # 4. Format code
+      - name: Code formatting
+        run: bun pretty
+
+      # 5. Run tests
+      - name: Run tests
+        run: bun test

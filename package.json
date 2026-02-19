@@ -1,6 +1,12 @@
 {
+	"name": "ms",
+	"version": "1.0.0",
+	"bin": {
+		"ms": "./main.js"
+	},
 	"scripts": {
-		"pretty": "bunx biome format --write"
+		"pretty": "bunx biome format --write",
+		"test": "bun test main.test.js"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.2"
