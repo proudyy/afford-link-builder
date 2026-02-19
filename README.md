@@ -53,7 +53,7 @@ Sonstige:
 - Desert Night
 - Woody Satin
 ```
-| Markdown list items start with a dash (`- `) at the line start.
+> Markdown list items start with a dash (`- `) at the line start.
 
 ## Contributions
 
