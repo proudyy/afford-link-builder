@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"pretty": "bunx biome format --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.2"
+	}
+}
