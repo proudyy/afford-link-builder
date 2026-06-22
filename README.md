@@ -37,7 +37,7 @@ chmod +x main.js
 1. Run the CLI command:
 
 ```bash
-./main.js
+bun ./main.js
 # or, if installed globally:
 ms
 ```
