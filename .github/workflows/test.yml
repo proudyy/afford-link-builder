@@ -12,7 +12,8 @@ jobs:
 
     steps:
       # 1. Checkout the repository
-      - uses: actions/checkout@v4
+      - name: Checkout the repository
+        uses: actions/checkout@v7
 
       # 2. Install Bun
       - name: Install bun runtime
@@ -24,9 +25,9 @@ jobs:
       - name: Install dependencies
         run: bun i
 
-      # 4. Format code
-      - name: Code formatting
-        run: bun pretty
+      # 4. Ensure code quality
+      - name: Ensure code quality with type checks, linter and formatter
+        run: bun check
 
       # 5. Run tests
       - name: Run tests
