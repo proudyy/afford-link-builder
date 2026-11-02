@@ -15,12 +15,12 @@ This can be used to share products across contacts.
 
 ## Features
 
-- Minimalistic, dependency-free, and fast  
+- Minimalistic, dependency-free, and fast
 - Generates **Markdown links** in the format `- [Product Name](URL)`
-- Handles **German umlauts** and special characters in URLs  
-- Cross-platform **clipboard support**: macOS, Windows, Linux  
-- ANSI-colored terminal output for a clean CLI experience  
-- Paste-friendly input (supports Ctrl+C + Ctrl+V)  
+- Handles **German umlauts** and special characters in URLs
+- Cross-platform **clipboard support**: macOS, Windows, Linux
+- ANSI-colored terminal output for a clean CLI experience
+- Paste-friendly input (supports Ctrl+C + Ctrl+V)
 
 ---
 
@@ -36,27 +36,31 @@ chmod +x main.js
 
 1. Run the CLI command:
 
-```bash
-bun ./main.js
-# or, if installed globally:
-ms
+```sh
+  ./main.js
+  # or, if installed globally:
+  ms
 ```
-2. Paste your product list, which *MUST* contain valid markdown list items e.g.:
-```
-Favoriten:
-- Woody Tobacco
-- Campfire
-- 74 km/h
 
-Sonstige:
-- Obsidian Trace
-- Desert Night
-- Woody Satin
+2. Paste your product list, which _MUST_ contain valid markdown list items e.g.:
+
+```sh
+  Favoriten:
+  - Woody Tobacco
+  - Campfire
+  - 74 km/h
+
+  Sonstige:
+  - Obsidian Trace
+  - Desert Night
+  - Woody Satin
 ```
-> Markdown list items start with a dash (`- `) at the line start.
+
+> Markdown list items start with a dash (`-`) at the line start.
 
 ## Contributions
 
 They're desired to happen if they meet these points:
+
 1. Slightly! explain code with details about what's happening.
 2. Make a pull request.

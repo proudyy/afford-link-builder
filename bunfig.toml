@@ -1,0 +1,19 @@
+# Bun runtime & test runner configuration.
+# https://bun.com/docs/runtime/bunfig
+
+[fmt]
+printWidth = 100
+jsdoc = true
+sortImports = true
+sortPackageJson = true
+
+[lint.rules]
+typeAware = true
+typeCheck = true
+"@typescript-eslint/consistent-type-imports" = "error" # or "warn"
+# "@typescript-eslint/no-explicit-any" = "on" # enable ones you can refactor code with precise types...
+
+[test]
+coverage = true
+coverageSkipTestFiles = true
+coveragePathIgnorePatterns = ["/tests/**", "scripts/**", "node_modules/**"]
